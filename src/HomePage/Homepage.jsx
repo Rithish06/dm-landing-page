@@ -6,11 +6,11 @@ import Slide from '../swiper/swiper';
 import Keyfeatures from '../keyfeatures/keyfeatures';
 import emailjs, { sendForm } from '@emailjs/browser';
 import assets from '../assets/assets';
-import { gsap } from "gsap";
-gsap.registerPlugin(ScrollTrigger)
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
-gsap.registerPlugin(SplitText);
+// import { gsap } from "gsap";
+// gsap.registerPlugin(ScrollTrigger)
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { SplitText } from "gsap/SplitText";
+// gsap.registerPlugin(SplitText);
 
 
 
@@ -60,99 +60,99 @@ const Homepage = () => {
     }
 
 
-    ScrollTrigger.matchMedia({
+    // ScrollTrigger.matchMedia({
 
-        // Desktop (large screens)
-        "(min-width: 1025px)": function () {
-            gsap.to(".insta,.linkedin,.Youtube", {
-                scrollTrigger: {
-                    trigger: ".insta,.linkedin,.Youtube",
-                    toggleActions: "restart pause reverse pause",
-                },
-                x: -680,
-                rotate: -360,
-                duration: 5,
-            });
+    //     // Desktop (large screens)
+    //     "(min-width: 1025px)": function () {
+    //         gsap.to(".insta,.linkedin,.Youtube", {
+    //             scrollTrigger: {
+    //                 trigger: ".insta,.linkedin,.Youtube",
+    //                 toggleActions: "restart pause reverse pause",
+    //             },
+    //             x: -680,
+    //             rotate: -360,
+    //             duration: 5,
+    //         });
 
-            gsap.to(".insta-img,.linkedin-img,.youtube", {
-                scrollTrigger: {
-                    trigger: ".insta-img,.linkedin-img,.youtube",
-                    toggleActions: "restart pause reverse pause",
-                },
-                x: 450,
-                rotate: 360,
-                duration: 5,
-            });
-        },
+    //         gsap.to(".insta-img,.linkedin-img,.youtube", {
+    //             scrollTrigger: {
+    //                 trigger: ".insta-img,.linkedin-img,.youtube",
+    //                 toggleActions: "restart pause reverse pause",
+    //             },
+    //             x: 450,
+    //             rotate: 360,
+    //             duration: 5,
+    //         });
+    //     },
 
-        // Tablet
-        "(min-width: 768px) and (max-width: 1024px)": function () {
-            gsap.to(".insta,.linkedin,.Youtube", {
-                scrollTrigger: {
-                    trigger: ".insta,.linkedin,.Youtube",
-                    toggleActions: "restart pause reverse pause",
-                },
-                x: -400,
-                rotate: -360,
-                duration: 5,
-            });
+    //     // Tablet
+    //     "(min-width: 768px) and (max-width: 1024px)": function () {
+    //         gsap.to(".insta,.linkedin,.Youtube", {
+    //             scrollTrigger: {
+    //                 trigger: ".insta,.linkedin,.Youtube",
+    //                 toggleActions: "restart pause reverse pause",
+    //             },
+    //             x: -400,
+    //             rotate: -360,
+    //             duration: 5,
+    //         });
 
-            gsap.to(".insta-img,.linkedin-img,.youtube", {
-                scrollTrigger: {
-                    trigger: ".insta-img,.linkedin-img,.youtube",
-                    toggleActions: "restart pause reverse pause",
-                },
-                x: 300,
-                rotate: 360,
-                duration: 5,
-            });
-        },
+    //         gsap.to(".insta-img,.linkedin-img,.youtube", {
+    //             scrollTrigger: {
+    //                 trigger: ".insta-img,.linkedin-img,.youtube",
+    //                 toggleActions: "restart pause reverse pause",
+    //             },
+    //             x: 300,
+    //             rotate: 360,
+    //             duration: 5,
+    //         });
+    //     },
 
-        // Mobile
-        "(max-width: 767px)": function () {
-            gsap.to(".insta,.linkedin,.Youtube", {
-                scrollTrigger: {
-                    trigger: ".insta,.linkedin,.Youtube",
-                    toggleActions: "restart pause reverse pause",
-                },
-                x: 50,
-                rotate: 360,
-                duration: 5,
-            });
+    //     // Mobile
+    //     "(max-width: 767px)": function () {
+    //         gsap.to(".insta,.linkedin,.Youtube", {
+    //             scrollTrigger: {
+    //                 trigger: ".insta,.linkedin,.Youtube",
+    //                 toggleActions: "restart pause reverse pause",
+    //             },
+    //             x: 50,
+    //             rotate: 360,
+    //             duration: 5,
+    //         });
 
-            gsap.to(".insta-img,.linkedin-img,.youtube", {
-                scrollTrigger: {
-                    trigger: ".insta-img,.linkedin-img,.youtube",
-                    toggleActions: "restart pause reverse pause",
-                },
-                x: 360,
-                rotate: 360,
-                duration: 5,
-            });
-        },
-        "(max-width: 380px)": function () {
-            gsap.to(".insta,.linkedin,.Youtube", {
-                scrollTrigger: {
-                    trigger: ".insta,.linkedin,.Youtube",
-                    toggleActions: "restart pause reverse pause",
-                },
-                x: 50,
-                rotate: 360,
-                duration: 5,
-            });
+    //         gsap.to(".insta-img,.linkedin-img,.youtube", {
+    //             scrollTrigger: {
+    //                 trigger: ".insta-img,.linkedin-img,.youtube",
+    //                 toggleActions: "restart pause reverse pause",
+    //             },
+    //             x: 360,
+    //             rotate: 360,
+    //             duration: 5,
+    //         });
+    //     },
+    //     "(max-width: 380px)": function () {
+    //         gsap.to(".insta,.linkedin,.Youtube", {
+    //             scrollTrigger: {
+    //                 trigger: ".insta,.linkedin,.Youtube",
+    //                 toggleActions: "restart pause reverse pause",
+    //             },
+    //             x: 50,
+    //             rotate: 360,
+    //             duration: 5,
+    //         });
 
-            gsap.to(".insta-img,.linkedin-img,.youtube", {
-                scrollTrigger: {
-                    trigger: ".insta-img,.linkedin-img,.youtube",
-                    toggleActions: "restart pause reverse pause",
-                },
-                x: 320,
-                rotate: 360,
-                duration: 5,
-            });
-        }
+    //         gsap.to(".insta-img,.linkedin-img,.youtube", {
+    //             scrollTrigger: {
+    //                 trigger: ".insta-img,.linkedin-img,.youtube",
+    //                 toggleActions: "restart pause reverse pause",
+    //             },
+    //             x: 320,
+    //             rotate: 360,
+    //             duration: 5,
+    //         });
+    //     }
 
-    });
+    // });
 
 
     return (

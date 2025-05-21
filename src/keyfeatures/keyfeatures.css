@@ -101,7 +101,7 @@ element.style {
         width: 250px;
         height: 340px;
         border-radius: 10px;
-        margin-left: 20px;
+        margin-left: 0px;
     }
     .card-headding{
         width: 96%;
