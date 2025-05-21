@@ -32,7 +32,7 @@ import mainimg from "./Images/main-img.svg";
 import managementimgresp from "./Images/management-img-resp.svg";
 import managementimg from "./Images/management-img.svg";
 import mobileapp from "./Images/Mobile-App.svg";
-import phone from "./Images/phone.svg";
+import phone from "./Images/Phone.svg";
 import photo1 from "./Images/photo-1.svg";
 import photo2 from "./Images/photo-2.svg";
 import photo3 from "./Images/photo-3.svg";
