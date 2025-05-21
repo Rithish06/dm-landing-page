@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import './HomePage.css'
+import './Homepage.css'
 import { useForm } from "react-hook-form";
 import Slide from '../swiper/swiper';
 // import Keyfeatures from '../keyfeatures/Keyfeatures';
