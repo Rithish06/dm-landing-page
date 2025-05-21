@@ -36,7 +36,7 @@ import phone from "./Images/Phone.svg";
 import photo1 from "./Images/photo-1.svg";
 import photo2 from "./Images/photo-2.svg";
 import photo3 from "./Images/photo-3.svg";
-import picture from "./Images/picture.svg";
+import picture from "./Images/Picture.svg";
 import playimg from "./Images/play-circle.svg";
 import quote from "./Images/quote.svg";
 import screen from "./Images/Screen.svg";
